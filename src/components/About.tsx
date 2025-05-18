@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-background">
+  return <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">
           About <span className="text-primary">Me</span>
@@ -12,17 +9,11 @@ const About = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <img 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
-              alt="Data visualization" 
-              className="rounded-xl shadow-xl w-full h-auto object-cover aspect-square md:aspect-auto"
-            />
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" alt="Data visualization" className="rounded-xl shadow-xl w-full h-auto object-cover aspect-square md:aspect-auto" />
           </div>
           
           <div className="space-y-6 animate-slide-up">
-            <h3 className="text-2xl font-semibold">
-              Passionate Data Scientist & Machine Learning Engineer
-            </h3>
+            <h3 className="text-2xl font-semibold">Emerging Data Scientist with a Passion for Insights</h3>
             
             <p className="text-foreground/80">
               With over 5 years of experience in data science and machine learning, I've developed a deep passion for extracting meaningful insights from complex datasets and building intelligent systems that solve real-world problems.
@@ -44,8 +35,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
