@@ -17,6 +17,17 @@ const Index = () => {
   useEffect(() => {
     // Set page title
     document.title = "John Doe | Data Scientist Portfolio";
+    
+    // Smooth scroll to section if hash is present in URL
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
   }, []);
 
   return (
