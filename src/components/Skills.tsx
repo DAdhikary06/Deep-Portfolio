@@ -3,6 +3,8 @@ import { useRef, useEffect } from "react";
 import { Database, Code2, Brain, LineChart, Languages, Boxes } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import { Progress } from "@/components/ui/progress";
 
 interface SkillCategory {
   category: string;
@@ -89,7 +91,10 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-muted/30" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">
-          My <span className="text-primary">Skills</span>
+          <span className="relative">
+            My <span className="text-primary">Skills</span>
+            <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30 rounded-full"></span>
+          </span>
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -100,7 +105,9 @@ const Skills = () => {
               style={{ animationDelay: `${catIndex * 200}ms` }}
             >
               <div className="flex items-center gap-3 mb-6">
-                {category.icon}
+                <div className="p-2 rounded-lg bg-primary/10">
+                  {category.icon}
+                </div>
                 <h3 className="text-xl font-semibold">{category.category}</h3>
               </div>
               
@@ -133,7 +140,9 @@ const Skills = () => {
         
         <div className="mt-12 bg-card rounded-xl shadow-md border border-border p-6 opacity-0 animate-fade-in" style={{ animationDelay: "600ms" }}>
           <div className="flex items-center gap-3 mb-6">
-            <Boxes className="h-6 w-6 text-primary" />
+            <div className="p-2 rounded-lg bg-primary/10">
+              <Boxes className="h-6 w-6 text-primary" />
+            </div>
             <h3 className="text-xl font-semibold">Other Technical Skills</h3>
           </div>
           
@@ -148,7 +157,9 @@ const Skills = () => {
         
         <div className="mt-12 bg-card rounded-xl shadow-md border border-border p-6 opacity-0 animate-fade-in" style={{ animationDelay: "800ms" }}>
           <div className="flex items-center gap-3 mb-6">
-            <Languages className="h-6 w-6 text-primary" />
+            <div className="p-2 rounded-lg bg-primary/10">
+              <Languages className="h-6 w-6 text-primary" />
+            </div>
             <h3 className="text-xl font-semibold">Languages</h3>
           </div>
           

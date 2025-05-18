@@ -89,10 +89,13 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience" className="py-20 bg-muted/30" ref={sectionRef}>
+    <section id="experience" className="py-20 bg-background" ref={sectionRef}>
       <div className="container mx-auto px-4 opacity-0 transition-all duration-700">
         <h2 className="text-3xl font-bold mb-12 text-center">
-          Work <span className="text-primary">Experience</span>
+          <span className="relative">
+            Work <span className="text-primary">Experience</span>
+            <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary/30 rounded-full"></span>
+          </span>
         </h2>
         
         <div className="relative max-w-3xl mx-auto">
