@@ -1,27 +1,22 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
-
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     // Add animation classes after component mounts for entrance animations
     const hero = heroRef.current;
     const text = textRef.current;
     const image = imageRef.current;
-    
     if (hero && text && image) {
       // Apply entrance animations with staggered timing
       setTimeout(() => {
         text.classList.add("animate-fade-in");
         text.style.opacity = "1";
       }, 300);
-      
       setTimeout(() => {
         image.classList.add("animate-fade-in");
         image.style.opacity = "1";
@@ -35,29 +30,25 @@ const Hero = () => {
         hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  return (
-    <section 
-      id="hero" 
-      ref={heroRef}
-      className="min-h-screen w-full flex items-center justify-center bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?auto=format&fit=crop&q=80&w=1600')" }}
-    >
+  return <section id="hero" ref={heroRef} className="min-h-screen w-full flex items-center justify-center bg-cover bg-center bg-no-repeat relative" style={{
+    backgroundImage: "url('https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?auto=format&fit=crop&q=80&w=1600')"
+  }}>
       <div className="absolute inset-0 hero-gradient"></div>
       
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div ref={textRef} className="opacity-0 transition-all duration-700" style={{ transform: "translateY(20px)" }}>
+          <div ref={textRef} className="opacity-0 transition-all duration-700" style={{
+          transform: "translateY(20px)"
+        }}>
             <div className="inline-block mb-4 py-1 px-3 rounded-full bg-primary/20 border border-primary/30">
               <span className="text-primary font-medium">Data Scientist</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
-              <span className="text-primary">John Doe</span>
+              <span className="text-primary font-bold">Deep Adhikary</span>
             </h1>
             
             <div className="overflow-hidden h-14 mb-6">
@@ -89,18 +80,11 @@ const Hero = () => {
             </div>
           </div>
           
-          <div ref={imageRef} className="flex justify-center md:justify-end opacity-0 transition-all duration-700" style={{ transform: "translateX(20px)" }}>
-            <div className={cn(
-              "relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden",
-              "border-4 border-primary/30 shadow-2xl",
-              "before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/20 before:to-transparent before:z-10",
-              "after:absolute after:inset-0 after:bg-black/10 after:animate-pulse-slow"
-            )}>
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" 
-                alt="John Doe"
-                className="w-full h-full object-cover scale-105 hover:scale-110 transition-all duration-1000"
-              />
+          <div ref={imageRef} className="flex justify-center md:justify-end opacity-0 transition-all duration-700" style={{
+          transform: "translateX(20px)"
+        }}>
+            <div className={cn("relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden", "border-4 border-primary/30 shadow-2xl", "before:absolute before:inset-0 before:bg-gradient-to-br before:from-primary/20 before:to-transparent before:z-10", "after:absolute after:inset-0 after:bg-black/10 after:animate-pulse-slow")}>
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" alt="John Doe" className="w-full h-full object-cover scale-105 hover:scale-110 transition-all duration-1000" />
               
               {/* Decorative elements */}
               <div className="absolute -bottom-2 -right-2 w-20 h-20 rounded-full bg-dscyan/20 blur-xl"></div>
@@ -128,8 +112,6 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
