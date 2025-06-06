@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/70 mb-4 md:mb-0">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Deep Adhikary. All rights reserved.
           </p>
           
           <div className="flex items-center space-x-6">

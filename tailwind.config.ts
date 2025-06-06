@@ -10,6 +10,7 @@ export default {
 		"./src/**/*.{ts,tsx}",
 	],
 	prefix: "",
+	
 	theme: {
 		container: {
 			center: true,
@@ -73,6 +74,7 @@ export default {
 				dsorange: '#FF5722',
 				dsred: '#F44336',
 			},
+			
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

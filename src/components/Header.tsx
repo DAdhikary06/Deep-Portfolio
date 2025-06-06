@@ -40,7 +40,7 @@ const Header = ({ isDarkMode, toggleDarkMode }: HeaderProps) => {
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="font-bold text-xl text-primary">
-          DS<span className="text-foreground">Portfolio</span>
+          My<span className="text-foreground">Portfolio</span>
         </a>
 
         {/* Desktop Navigation */}

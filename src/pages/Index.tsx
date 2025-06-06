@@ -16,8 +16,8 @@ const Index = () => {
   
   useEffect(() => {
     // Set page title
-    document.title = "John Doe | Data Scientist Portfolio";
-    
+    document.title = "Deep Adhikary | Data Scientist Portfolio";
+
     // Smooth scroll to section if hash is present in URL
     if (window.location.hash) {
       const id = window.location.hash.substring(1);

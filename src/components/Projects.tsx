@@ -29,42 +29,42 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Machine Learning Pipeline",
-      description: "End-to-end ML pipeline for predictive analytics",
-      fullDescription: "Developed a comprehensive machine learning pipeline that automates data preprocessing, feature engineering, model training, hyperparameter tuning, and deployment. The system uses TensorFlow and scikit-learn to create and optimize various predictive models for business insights.",
-      technologies: ["Python", "TensorFlow", "scikit-learn", "Pandas", "Docker"],
-      github: "https://github.com/username/project1",
-      demo: "https://example.com/demo1",
-      image: "https://images.unsplash.com/photo-1527474305487-b87b222841cc?auto=format&fit=crop&q=80&w=1200"
+      title: "Movie Recommendation System using ML",
+      description: "The content based movie recommendation engine is a machine learning-based project that suggests personalized movie titles to users based on their preferences and similarity metrics.",
+      fullDescription: "A content-based movie recommendation system built using machine learning and natural language processing techniques. The system suggests movies similar to a user’s favorite based on metadata such as genres, keywords, and cast information. This project demonstrates proficiency in data preprocessing, feature engineering, cosine similarity, and building interactive recommendation tools.",
+      technologies: ["Python", "Pandas", "Scikit-learn", "NLTK","Numpy","TF-IDF","Cosine Similarity"],
+      github: "https://github.com/DAdhikary06/Movie-Recommendation-using-ML",
+      image: "https://images.unsplash.com/photo-1542903660-eedba2cda473?auto=format&fit=crop&q=80&w=1200"
     },
     {
       id: 2,
-      title: "Data Visualization Dashboard",
-      description: "Interactive dashboards for business insights",
-      fullDescription: "Created a real-time interactive dashboard that visualizes key business metrics and KPIs. The system integrates with various data sources, processes the data using Python, and presents it through an intuitive interface built with React and D3.js.",
-      technologies: ["Python", "React", "D3.js", "Pandas", "REST API"],
-      github: "https://github.com/username/project2",
-      demo: "https://example.com/demo2",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200"
+      title: "CINEMAX",
+      description: "Cinemax is a full-stack MERN application for seamless online movie ticket booking with real-time seat selection, secure payments, and an admin dashboard.",
+      fullDescription: "A full-stack online movie ticket booking platform built using the MERN stack. Designed for single-hall cinemas, Cinemax allows users to browse movies, select showtimes, choose seats, and complete secure payments. Includes both user and admin panels with real-time seat tracking and payment gateway integration.",
+      technologies: ["React"," Node.js", "Express", "MongoDB", "Razor Pay","Material UI","OAuth 2.0"],
+      github: "https://github.com/DAdhikary06/cinemart",
+      // demo: "https://example.com/demo1",
+      image: "https://github.com/DAdhikary06/cinemart/blob/main/frontend/public/preview.png?raw=true"
     },
     {
       id: 3,
-      title: "Sentiment Analysis Tool",
-      description: "NLP-based sentiment analysis for customer feedback",
-      fullDescription: "Built an advanced sentiment analysis tool that processes customer feedback from various channels. The system uses natural language processing techniques to categorize feedback, extract key topics, and identify sentiment trends over time.",
-      technologies: ["Python", "NLTK", "spaCy", "Flask", "MongoDB"],
-      github: "https://github.com/username/project3",
-      image: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?auto=format&fit=crop&q=80&w=1200"
+      title: "StockSaver",
+      description: "StockSaver is a full-stack medical stock management system built with Django and React, enabling efficient inventory tracking, billing, analytics, and secure payments via Stripe.",
+      fullDescription: "StockSaver is a Django and React-based web app for managing pharmacy inventory. It offers real-time stock tracking, expiry alerts, billing, and secure Stripe payments. With responsive design, user authentication, and sales analytics, it simplifies inventory management and enhances efficiency for clinics and healthcare businesses.",
+      technologies: ["Django Rest Framework", "React", "SQLite", "Stripe","JWT"],
+      github: "https://github.com/DAdhikary06/StockSaver-MSME",
+      // demo: "https://example.com/demo2",
+      image: "https://github.com/DAdhikary06/StockSaver-MSME/blob/main/Screenshots/Dashbord.png?raw=true",
     },
-    {
-      id: 4,
-      title: "Recommendation System",
-      description: "Collaborative filtering recommendation engine",
-      fullDescription: "Designed and implemented a recommendation system using collaborative filtering techniques. The system analyzes user behavior and preferences to suggest relevant products or content, significantly improving user engagement and conversion rates.",
-      technologies: ["Python", "TensorFlow", "PyTorch", "AWS"],
-      github: "https://github.com/username/project4",
-      image: "https://images.unsplash.com/photo-1542903660-eedba2cda473?auto=format&fit=crop&q=80&w=1200"
-    }
+    // {
+    //   id: 3,
+    //   title: "Sentiment Analysis Tool",
+    //   description: "NLP-based sentiment analysis for customer feedback",
+    //   fullDescription: "Built an advanced sentiment analysis tool that processes customer feedback from various channels. The system uses natural language processing techniques to categorize feedback, extract key topics, and identify sentiment trends over time.",
+    //   technologies: ["Python", "NLTK", "spaCy", "Flask", "MongoDB"],
+    //   github: "https://github.com/username/project3",
+    //   image: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?auto=format&fit=crop&q=80&w=1200"
+    // },
   ];
 
   const handleOpenProject = (project: Project) => {
