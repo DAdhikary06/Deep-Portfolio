@@ -32,13 +32,16 @@ const Experience = () => {
           {experiences.map((exp) => (
             <div
               key={exp.id}
-              className={`relative w-full max-w-xl mb-12 transition-all duration-700 ${
-                show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
+              className={`relative w-full max-w-xl mb-12 transition-all duration-700 ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                } group`}
             >
+              {/* Glowing effect behind card on hover */}
+              <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+                <div className="opacity-0 group-hover:opacity-100 transition duration-500 blur-2xl rounded-2xl w-full h-full bg-primary/40"></div>
+              </div>
               {/* Logo above card */}
               <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-10">
-                <div className="w-16 h-16 rounded-full border-4 border-primary/30 bg-white flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 rounded-full border-4 border-primary/30 bg-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:border-primary transition-all duration-300">
                   <img
                     src={exp.logo}
                     alt={exp.company}
@@ -47,9 +50,10 @@ const Experience = () => {
                 </div>
               </div>
               {/* Card */}
-              <div className="bg-white dark:bg-card rounded-2xl shadow-xl border-l-8 border-primary/70 p-8 pt-12 flex flex-col">
+              <div className="relative bg-white dark:bg-card rounded-2xl shadow-xl border-l-8 border-primary/70 p-8 pt-12 flex flex-col
+      group-hover:shadow-2xl group-hover:scale-[1.025] group-hover:border-primary transition-all duration-300">
                 <div className="flex items-center gap-3 mb-2">
-                  <Briefcase className="h-5 w-5 text-primary" />
+                  <Briefcase className="h-5 w-5 text-primary group-hover:animate-bounce" />
                   <span className="font-bold text-xl text-primary">{exp.role}</span>
                 </div>
                 <div className="text-lg font-medium text-foreground/80 mb-1">{exp.company}</div>
@@ -62,7 +66,7 @@ const Experience = () => {
                   {exp.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 font-semibold"
+                      className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 font-semibold group-hover:bg-primary/20 transition-all duration-300"
                     >
                       {skill}
                     </span>

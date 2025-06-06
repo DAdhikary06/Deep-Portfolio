@@ -16,7 +16,7 @@ const About = () => {
           <h3 className="text-2xl font-semibold">Emerging Data Scientist with a Passion for Data-Driven Solutions</h3>
 
           <p className="text-foreground/80">
-            I'm Deep Adhikary — an aspiring Data Scientist with a solid foundation in Python (Pandas, NumPy, Matplotlib), SQL, Excel, and Power BI.I’m passionate about uncovering insights that drive strategic decisions.
+            I'm Deep Adhikary — an aspiring Data Scientist with a solid foundation in Python (Pandas, NumPy, Matplotlib), SQL, Excel, and Power BI. I’m passionate about uncovering insights that drive strategic decisions.
           </p>
           <p className="text-foreground/80">
             I’m currently exploring Transformer-based models to deepen my understanding of state-of-the-art NLP. My experience as a Subject Matter Expert in Mathematics has strengthened my analytical thinking and ability to explain complex concepts clearly.</p>

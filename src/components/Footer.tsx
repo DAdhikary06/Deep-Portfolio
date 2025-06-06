@@ -1,9 +1,8 @@
-
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="py-8 bg-background border-t border-border">
       <div className="container mx-auto px-4">
@@ -11,10 +10,17 @@ const Footer = () => {
           <p className="text-foreground/70 mb-4 md:mb-0">
             © {currentYear} Deep Adhikary. All rights reserved.
           </p>
-          
+
           <div className="flex items-center space-x-6">
-            <a 
-              href="https://github.com/username"
+            <a
+              href="mailto:deep712148@gmail.com"
+              className="text-foreground/70 hover:text-primary transition-colors"
+              aria-label="Email"
+            >
+              <Mail className="h-5 w-5" />
+            </a>
+            <a
+              href="https://github.com/DAdhikary06"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/70 hover:text-primary transition-colors"
@@ -22,30 +28,18 @@ const Footer = () => {
             >
               <Github className="h-5 w-5" />
             </a>
-            <a 
-              href="https://linkedin.com/in/username"
-              target="_blank" 
+            <a
+              href="https://linkedin.com/in/deep-adhikary-030478222"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/70 hover:text-primary transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
-            <a 
-              href="mailto:email@example.com"
-              className="text-foreground/70 hover:text-primary transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
           </div>
         </div>
-        
-        <div className="mt-6 text-center text-sm text-foreground/60">
-          <p className="flex items-center justify-center">
-            Built with <Heart className="h-4 w-4 text-red-500 mx-1" /> using React & Tailwind CSS
-          </p>
-        </div>
+
       </div>
     </footer>
   );

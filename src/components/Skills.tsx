@@ -14,6 +14,8 @@ import {
 } from "react-icons/si";
 import { FaBrain, FaGlobe ,FaJava,FaChartBar  } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
+import { MdOutlineGeneratingTokens } from "react-icons/md";
+
 
 const skillCategories = [
   {
@@ -28,13 +30,13 @@ const skillCategories = [
   {
     title: "Data Science & ML",
     skills: [
-      { name: "Pandas", icon: <SiPandas className="h-5 w-5 text-[#623fee]" /> },
+     { name: "Pandas", icon: <SiPandas className="h-5 w-5 text-[#623fee]" /> },
       { name: "NumPy", icon: <SiNumpy className="h-5 w-5 text-[#013243]" /> },
       { name: "Scikit-learn", icon: <SiScikitlearn className="h-5 w-5 text-[#f89939]" /> },
       { name: "NLTK", icon: <SiPython className="h-5 w-5 text-[#FF6F00]" /> },
       { name: "PyTorch", icon: <SiPytorch className="h-5 w-5 text-[#EE4C2C]" /> },
-      // { name: "Matplotlib", icon: <FaChartBar className="h-5 w-5 text-[#11557c]" /> },
       { name: "Seaborn", icon: <FaChartBar  className="h-5 w-5 text-[#4c72b0]" /> },
+      { name: "Transformer", icon: <MdOutlineGeneratingTokens className="h-5 w-5 text-[#ffcc00]" /> },
     ],
   },
   {
@@ -75,7 +77,7 @@ const Skills = () => (
               {category.skills.map((skill) => (
                 <Badge
                   key={skill.name}
-                  className="flex items-center gap-2 px-3 py-2 text-base bg-transparent border border-primary/30 font-medium text-white"
+                  className="flex items-center gap-2 px-3 py-2 text-base bg-transparent border border-primary/30 font-medium text-foreground"
                 >
                   {skill.icon}
                   <span>{skill.name}</span>
