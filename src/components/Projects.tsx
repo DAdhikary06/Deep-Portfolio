@@ -38,6 +38,7 @@ const Projects = () => {
       fullDescription: "A content-based movie recommendation system built using machine learning and natural language processing techniques. The system suggests movies similar to a user’s favorite based on metadata such as genres, keywords, and cast information. This project demonstrates proficiency in data preprocessing, feature engineering, cosine similarity, and building interactive recommendation tools.",
       technologies: ["Python", "Pandas", "Scikit-learn", "NLTK", "Numpy", "TF-IDF", "Cosine Similarity"],
       github: "https://github.com/DAdhikary06/Movie-Recommendation-using-ML",
+      demo: "https://huggingface.co/spaces/DAdhikary/Pick4You",
       image: "https://images.unsplash.com/photo-1542903660-eedba2cda473?auto=format&fit=crop&q=80&w=1200"
     },
     {
@@ -60,15 +61,16 @@ const Projects = () => {
       // demo: "https://example.com/demo2",
       image: "https://github.com/DAdhikary06/StockSaver-MSME/blob/main/Screenshots/Dashbord.png?raw=true",
     },
-    // {
-    //   id: 3,
-    //   title: "Sentiment Analysis Tool",
-    //   description: "NLP-based sentiment analysis for customer feedback",
-    //   fullDescription: "Built an advanced sentiment analysis tool that processes customer feedback from various channels. The system uses natural language processing techniques to categorize feedback, extract key topics, and identify sentiment trends over time.",
-    //   technologies: ["Python", "NLTK", "spaCy", "Flask", "MongoDB"],
-    //   github: "https://github.com/username/project3",
-    //   image: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?auto=format&fit=crop&q=80&w=1200"
-    // },
+  {
+    id: 4,
+    title: "Bank Customer Churn Prediction System",
+    description: "A machine learning-powered system that predicts bank customer churn with 86.95% accuracy using XGBoost, deployed as a web app with interactive PowerBI dashboards.",
+    fullDescription: "Built a comprehensive machine learning model using XGBoost to predict bank customer churn with 86.95% accuracy. The system processes and analyzes 10,000+ customer records to identify patterns and predict which customers are likely to leave.\n\nDeployed the churn prediction system as a web application using Streamlit Cloud for real-time usage by banking professionals. Created interactive dashboards in Power BI to visualize churn trends, customer segmentation, and key performance indicators for data-driven decision making.",
+    technologies: ["Python", "Streamlit", "Scikit-learn", "XGBoost", "PowerBI", "Pandas"],
+    github: "https://github.com/DAdhikary06/Bank_Customer_Churn_Analysis",
+    demo: "https://dadhikary06-bank-customer-churn-analysis.streamlit.app/",
+    image: "https://github.com/DAdhikary06/Bank_Customer_Churn_Analysis/blob/main/images/Churn analysis.jpg?raw=true"
+  },
   ];
 
   const handleOpenProject = (project: Project) => {
